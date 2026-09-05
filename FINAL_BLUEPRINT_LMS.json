@@ -1,0 +1,59 @@
+{
+  "project": "Infinyt 3D Standalone Offline LMS",
+  "version": "1.0.0",
+  "type": "desktop-application",
+  "platform": "windows-x64",
+  "offlineOnly": true,
+  "stack": {
+    "shell": "Electron v33",
+    "frontend": "React 18 + Vite + TypeScript",
+    "styling": "Tailwind CSS (Infinyt 3D Official Orange & White Theme)",
+    "database": "Embedded SQLite (sql.js) in storage/infinyt_lms.db",
+    "certificates": "pdf-lib (offline vector PDF)"
+  },
+  "pillars": [
+    {
+      "id": 1,
+      "name": "Two-Tier Course System",
+      "description": "Inbuilt flagship course pre-installed + dynamic injection from external hard drive/USB (.i3dpack)"
+    },
+    {
+      "id": 2,
+      "name": "3-Engine Lesson Player",
+      "formats": [
+        "Offline Video Player (with resume & anti-skip watch tracking)",
+        "Technical PDF Viewer (zoom, page jump)",
+        "SOP Guide (formatted text, parameters, interactive checklists)"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Assessment & Examination Runner",
+      "features": [
+        "Countdown timer",
+        "Multiple-choice answering",
+        "Passing threshold gating (80%)",
+        "Immediate review with instructor explanations",
+        "HMAC-SHA256 cryptographic anti-tamper signing"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Progression & Certification",
+      "features": [
+        "Linear prerequisite locking between modules",
+        "Vector PDF certificate generation with unique verification hash"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Instructor Studio & Package Manager",
+      "features": [
+        "Master Admin PIN protection (1234)",
+        "In-app Course Creator",
+        "USB .i3dpack Package Exporter & Importer"
+      ]
+    }
+  ],
+  "instructionsForAgent": "Build strictly following this blueprint. Never make external network requests. Ensure every button has a working handler. Verify with 'npx vite build'."
+}

@@ -1,0 +1,30 @@
+appId: com.infinyt3d.lms
+productName: Infinyt 3D LMS
+copyright: Copyright © 2026 Infinyt 3D
+directories:
+  output: dist-release
+  buildResources: build
+files:
+  - dist/**/*
+  - dist-electron/**/*
+  - package.json
+asarUnpack:
+  - "node_modules/sql.js/**/*"
+  - "node_modules/adm-zip/**/*"
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Infinyt 3D LMS
+  uninstallDisplayName: Infinyt 3D LMS Uninstaller
+portable:
+  artifactName: Infinyt3D-LMS-Portable.exe
